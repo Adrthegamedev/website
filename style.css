@@ -1,0 +1,81 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+@font-face{
+    font-family: MysteryDungeonMerged;
+    src:local("Wonder Mail");
+    size-adjust: 150%; 
+}
+@font-face{
+    font-family: MysteryDungeonMerged;
+    src: url(https://sprites.pmdcollab.org/Wonder_Mail.ttf) format('ttf');
+    size-adjust: 150%;
+}
+@font-face{
+    font-family: FairfaxEdited;
+    src:local("Fairfax"); 
+    size-adjust: 130%; 
+}
+@font-face{
+    font-family: FairfaxEdited;
+    src:url(https://www.kreativekorp.com/static/fairfax.ttf) format('ttf');
+    size-adjust: 130%;
+}
+
+
+body, html {
+  margin: 0;
+  image-rendering: pixelated;
+}
+
+body::before {
+  display:block;
+  background: url("./pmdwater.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  top: 0vh;
+  content: "";
+  z-index: -1;
+}
+
+.content {
+  color: #ffffff;
+  font-family: MysteryDungeonMerged, FairfaxEdited;
+  background-color: #0000007F;
+  line-height: 1.334;
+  display:block;
+
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+
+  padding: 15px;
+  border: 10px solid transparent;
+  border-image: url(./pmdborder.png) 8 round;
+  border-image-width: 15px;
+  border-radius: 15px;
+}
+
+a {
+  color: #00ffff;
+}
+
+span[title] {
+  display: inline-block;
+  border-bottom: 1px dashed white;
+  padding-bottom: 2px;
+  margin-bottom: -2px;
+  cursor: alias
+}
+.eight a img {
+  width:88px;
+  height:31px;
+  image-rendering: pixelated;
+}
