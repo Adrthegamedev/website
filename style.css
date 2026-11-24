@@ -44,23 +44,50 @@ body::before {
   z-index: -1;
 }
 
-.content {
-  color: #ffffff;
-  font-family: MysteryDungeonMerged, FairfaxEdited;
-  background-color: #0000007F;
-  line-height: 1.334;
-  display:block;
+body {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr
+}
 
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
+.pmd {
+  font-family: MysteryDungeonMerged, FairfaxEdited;
+  color: #ffffff;
+  line-height: 1.334;
 
   padding: 15px;
   border: 10px solid transparent;
   border-image: url(./pmdborder.png) 8 round;
   border-image-width: 15px;
   border-radius: 15px;
+  background-color: #0000007F;
+}
+
+.imgbox {
+  float:right;
+  display:block
+}
+
+.alt {
+  font-size: 80%;
+  color: #afafaf;
+}
+
+.content {
+  display:inline-block;
+
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 2vw;
+}
+
+.nav {
+  display:inline-block;
+
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  height:fit-content
 }
 
 a {
